@@ -6,8 +6,9 @@ class CustomButton extends StatelessWidget {
   final String text;
   var onPressed;
   final Color color;
-
-  CustomButton({this.text = " ", this.onPressed, this.color = mainColor});
+  final Color textColor;
+final double borderWidth;
+  CustomButton({this.text = " ", this.onPressed, this.color = buttonColor1,this.textColor = mainColor,this.borderWidth=1.1});
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +17,14 @@ class CustomButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
-            side: BorderSide(width: 1.0, color: borderColor),
+            side:  BorderSide(width: borderWidth, color: borderColor),
           ),
-          primary: Colors.white,
+          primary: color,
           elevation: 0),
       child: Padding(
         padding: const EdgeInsets.all(6.0),
         child: CustomText(
+          color: textColor,
           text: text,
           alignment: Alignment.center,
         ),

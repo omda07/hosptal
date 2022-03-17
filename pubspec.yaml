@@ -41,6 +41,9 @@ dependencies:
   animated_splash_screen: ^1.2.0
   flutter_svg: ^1.0.3
   percent_indicator: ^3.4.0
+  font_awesome_flutter: ^9.2.0
+  shared_preferences: ^2.0.13
+  dio: ^4.0.4
 
 
 dev_dependencies:
@@ -83,7 +86,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: IconBroken
+      fonts:
+        - asset: assets/icons/icons.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf

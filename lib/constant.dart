@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 
 const Color mainColor = Color(0xff22C7B8);
 const Color borderColor = Color(0xff707070);
+const textColor1=Color(0xff828282);
+const buttonColor1=Color(0xff2FBEB0);
 
 const primarycolor=Color(0xffFFFFFF);
 const primarybrowndark=Color(0xff8D2D15);
 const textcolor=Color(0xff000000);
 const textblue=Color(0xffE8F5FF);
-const butcolor=Color(0xffC06818);
 const gray=Color(0xff828282);
 const grayborder=Color(0xffCCC7C7);
 const backtextfild=Color(0xffF3F3F3);
@@ -71,3 +72,10 @@ Widget horizontalLine(double lineWidth,
 TextStyle? clickableCaption(context){
   return Theme.of(context).textTheme.caption?.copyWith(color: Theme.of(context).accentColor,fontSize:15,fontWeight: FontWeight.w600 );
 }
+
+void printFullText(String text) {
+  final pattern = RegExp('.{1,800}'); // 800 is the size of each chunk
+  pattern.allMatches(text).forEach((match) => print(match.group(0)));
+}
+
+String? token;
