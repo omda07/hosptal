@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:hospital/views/screens/login_screen.dart';
 import 'package:hospital/views/widgets/CustomButton.dart';
+import 'package:hospital/views/widgets/navigator.dart';
 
 import '../widgets/custom_text.dart';
 
@@ -60,7 +62,9 @@ class PrototypeMap extends StatelessWidget {
                       CustomButton(
                         color: Colors.white,
                         text: 'Manager',
-                        onPressed: () {},
+                        onPressed: () {
+                          navigatorAndRemove(context, LoginScreen());
+                        },
                       ),
                       SizedBox(width: media.width / 30),
                       CustomButton(
