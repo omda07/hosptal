@@ -34,31 +34,37 @@ class PrototypeMap extends StatelessWidget {
                     alignment: WrapAlignment.center,
                     children: [
                       CustomButton(
+                        color: Colors.white,
                         text: 'Doctor',
                         onPressed: () {},
                       ),
                       SizedBox(width: media.width / 30),
                       CustomButton(
+                        color: Colors.white,
                         text: 'Receptionist',
                         onPressed: () {},
                       ),
                       SizedBox(width: media.width / 30),
                       CustomButton(
+                        color: Colors.white,
                         text: 'Nurse',
                         onPressed: () {},
                       ),
                       SizedBox(width: media.width / 30),
                       CustomButton(
+                        color: Colors.white,
                         text: 'Analysis Employee',
                         onPressed: () {},
                       ),
                       SizedBox(width: media.width / 30),
                       CustomButton(
+                        color: Colors.white,
                         text: 'Manager',
                         onPressed: () {},
                       ),
                       SizedBox(width: media.width / 30),
                       CustomButton(
+                        color: Colors.white,
                         text: 'Hr',
                         onPressed: () {},
                       ),
